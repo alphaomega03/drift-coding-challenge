@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
+import { useWallet } from '@solana/wallet-adapter-react'
 
 export default function Header() {
+  const { wallet } = useWallet()
   return (
     <div className={styles.header}>
       <Image
@@ -11,7 +14,11 @@ export default function Header() {
         height={22.17}
         alt="Drift Logo"
       />
-      <button className={styles.connectWallet}>Connect Wallet</button>
+      {
+        wallet ?
+        <WalletMultiButton></WalletMultiButton> :
+        <WalletMultiButton className={styles.connectWallet}>Connect Wallet</WalletMultiButton>
+      }
     </div>
   )
 }

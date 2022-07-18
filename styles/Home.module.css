@@ -28,6 +28,7 @@
   padding-bottom: 166px;
   justify-content: space-between;
   min-width: 84vw;
+  height: 25vh;
 }
 .logo {
 
@@ -46,8 +47,10 @@
   padding-bottom: 62px;
 }
 
-
-
+.connectWallet {
+  color: #000;
+  background: linear-gradient(114.67deg,hsla(0,0%,100%,.2) 16.59%,transparent 56.74%),linear-gradient(137.87deg,#f6f063 5.36%,hsla(2,64%,67%,0) 62.77%),linear-gradient(83.36deg,#ff3873 3.72%,#711eff 46.75%,#3fe5ff 94.51%);
+}
 .content > h2, .learnMore > h2 {
   color: #6683A7;
   font-style: normal;
