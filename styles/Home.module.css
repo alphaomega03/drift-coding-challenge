@@ -43,9 +43,12 @@
   justify-content: left;
   width: 84vw;
   flex-direction: column;
+  padding-bottom: 62px;
 }
 
-.content > h2 {
+
+
+.content > h2, .learnMore > h2 {
   color: #6683A7;
   font-style: normal;
   font-weight: 500;
@@ -57,6 +60,28 @@
   background: #132236;
   width: 84vw;
   height: 40vh;
+  border-radius: 16px;
+}
+
+.learnMore {
+  display: flex;
+  justify-content: left;
+  width: 84vw;
+  flex-direction: column;
+}
+
+.linkContainer {
+  width: 41.5vw;
+  height: 20vh;
+  background: #132236;
+  border-radius: 16px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 84vw;
 }
 
 .footer {
