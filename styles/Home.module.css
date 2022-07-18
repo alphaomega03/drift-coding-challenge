@@ -1,15 +1,40 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  background: #080F18;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #FFF
+}
+
+.main {
+  min-height: 100vh;
+  width: 84vw;
+  flex: 1;
+  background: #080F18;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  padding-top: 56px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 166px;
+  justify-content: space-between;
+  min-width: 84vw;
+}
+.logo {
+
+  /* position: absolute;
+  left: 10.47%;
+  right: 85.05%;
+  top: 5.01%;
+  bottom: 93%; */
 }
 
 .footer {
@@ -103,10 +128,6 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
 
 @media (max-width: 600px) {
   .grid {
