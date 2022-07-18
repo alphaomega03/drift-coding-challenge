@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Content from './components/Content'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import LearnMore from './components/LearnMore'
 
@@ -19,10 +20,7 @@ export default function Home() {
 
         <LearnMore/>
       </main>
-
-      <footer className={styles.footer}>
-
-      </footer>
+      <Footer />
     </div>
   )
 }
