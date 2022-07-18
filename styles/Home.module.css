@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FFF
+  color: #FFF;
+  font-family: 'EduMarfaVariable';
 }
 
 .main {
@@ -35,6 +36,27 @@
   right: 85.05%;
   top: 5.01%;
   bottom: 93%; */
+}
+
+.content {
+  display: flex;
+  justify-content: left;
+  width: 84vw;
+  flex-direction: column;
+}
+
+.content > h2 {
+  color: #6683A7;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.connectContainer {
+  background: #132236;
+  width: 84vw;
+  height: 40vh;
 }
 
 .footer {
