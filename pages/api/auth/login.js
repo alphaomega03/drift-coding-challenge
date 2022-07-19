@@ -1,8 +1,4 @@
-import { withSession } from "../../../utils/session"
-
-
-
-const handler = async (req, res) => {
+export default async function handler (req, res) {
   const { address } = req.query
 
   const OAuthScope = ['identify'].join(" ")
@@ -15,5 +11,3 @@ const handler = async (req, res) => {
   })
   res.redirect(`https://discordapp.com/oauth2/authorize?${OAuthData}`)
 }
-
-export default withSession(handler)

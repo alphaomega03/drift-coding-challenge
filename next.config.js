@@ -9,6 +9,10 @@ const nextConfig = {
     })
 
     return config
+  },
+
+  images: {
+    domains: ["avatars.dicebear.com", "cdn.discordapp.com"]
   }
 }
 

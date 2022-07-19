@@ -9,7 +9,7 @@ import DiscordOauth2 from 'discord-oauth2'
 import { WalletDisconnectButton, WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import Link from 'next/link'
 import axios from 'axios'
-import { getUser } from '../../requests'
+import { deleteUser, getUser } from '../../requests'
 
 export default function Verify() {
   const { wallet, publicKey, signMessage } = useWallet()
@@ -47,6 +47,12 @@ export default function Verify() {
       alert(`Signing failed due to error: ${error.message}`)
     }
   }, [publicKey, signMessage])
+
+  const onUnlink = useCallback( async () => {
+    deleteUser(publicKey).then(() => {
+      setUser(undefined)
+    })
+  })
 
   return (
     <div className={styles.verify}>
@@ -87,9 +93,9 @@ export default function Verify() {
             </Link>
           </div>
         )}
-        {wallet && (
+        {wallet && publicKey && user && (
             <div className={styles.buttonContainer}>
-              <WalletDisconnectButton className={styles.signOut}>Sign Out</WalletDisconnectButton>
+              <button className={styles.signOut} onClick={onUnlink}>Unlink with Discord</button>
             </div>
           )
         }

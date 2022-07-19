@@ -1,13 +1,11 @@
 import axios from 'axios'
-import { stringify } from 'querystring'
 import { API_SERVER_BASE_URL } from '../../../consts'
-import { withSession } from '../../../utils/session'
 
 
 const OAuthScope = ['identify'].join(" ")
 
 
-const handler = async (req, res) => {
+export default async function handler (req, res) {
 
   if (!req.query.code) {
     res.status(404).redirect("/404")
@@ -89,5 +87,3 @@ const handler = async (req, res) => {
     return
   }
 }
-
-export default withSession(handler)
