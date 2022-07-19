@@ -64,6 +64,81 @@
   width: 84vw;
   height: 40vh;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet {
+  width: 28vw;
+  border-color: #132236;
+  border-style: solid;
+  border-width: 0px 1px 0px;
+  border-top-width: 0px !important;
+}
+
+.avatars {
+  display: flex;
+  width: 28vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.handshake {
+  font-size: 3rem;
+}
+.connectWalletContent {
+  padding-left: 10px;
+}
+
+.verify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: space-between; */
+  height: 40vh;
+}
+
+.verify > div, .buttonContainer {
+  padding-top: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signIn, .signOut{
+  background-color: #512da8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 24px;
+  border-radius: 4px;
+  width: 9.5vw;
+}
+
+.signIn:hover {
+  background-color: #1a1f2e;
+}
+
+
+.signOut {
+  background-color: #FFA099;
+}
+
+.signOut:hover {
+  background-color: #1a1f2e;
 }
 
 .learnMore {
